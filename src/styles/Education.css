@@ -1,0 +1,200 @@
+/* ==========================================================================
+   EDUCATION SECTION STYLES
+   ========================================================================== */
+
+.education-section {
+  position: relative;
+}
+
+.education-timeline {
+  max-width: 860px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.timeline-item {
+  display: flex;
+  gap: 28px;
+  position: relative;
+}
+
+/* Timeline Left Marker */
+.timeline-marker {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.marker-dot {
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  background: var(--gradient-primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  box-shadow: 0 0 20px rgba(99, 102, 241, 0.4);
+  flex-shrink: 0;
+  z-index: 2;
+}
+
+.marker-line {
+  width: 2px;
+  flex: 1;
+  background: linear-gradient(180deg, var(--accent-primary) 0%, transparent 100%);
+  margin-top: 12px;
+  min-height: 100px;
+}
+
+/* Timeline Content Card */
+.timeline-card {
+  flex: 1;
+  padding: 32px;
+  margin-bottom: 20px;
+}
+
+.timeline-card-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 18px;
+}
+
+.degree-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 4px 12px;
+  border-radius: var(--radius-full);
+  background: rgba(6, 182, 212, 0.12);
+  border: 1px solid rgba(6, 182, 212, 0.3);
+  color: var(--accent-cyan);
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.degree-title {
+  font-size: 1.45rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 4px;
+}
+
+.degree-field {
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: var(--accent-primary);
+}
+
+.timeline-date-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 14px;
+  border-radius: var(--radius-full);
+  background: var(--bg-card);
+  border: 1px solid var(--border-subtle);
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  color: var(--text-secondary);
+  white-space: nowrap;
+}
+
+.degree-description {
+  font-size: 0.98rem;
+  color: var(--text-secondary);
+  line-height: 1.65;
+  margin-bottom: 24px;
+}
+
+/* Coursework */
+.coursework-section {
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.12);
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border-subtle);
+  margin-bottom: 20px;
+}
+
+.coursework-header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: 14px;
+}
+
+.coursework-icon {
+  color: var(--accent-primary);
+}
+
+.coursework-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+
+.course-chip {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 12px;
+  background: var(--bg-card);
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--border-subtle);
+  font-size: 0.82rem;
+  color: var(--text-secondary);
+}
+
+.course-check {
+  color: var(--accent-emerald);
+  flex-shrink: 0;
+}
+
+/* Academic Footer */
+.academic-footer-bar {
+  padding-top: 16px;
+  border-top: 1px solid var(--border-subtle);
+}
+
+.academic-highlight {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.88rem;
+  color: var(--text-secondary);
+}
+
+.highlight-award-icon {
+  color: var(--accent-cyan);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .timeline-item {
+    gap: 16px;
+  }
+
+  .marker-dot {
+    width: 36px;
+    height: 36px;
+  }
+
+  .timeline-card-header {
+    flex-direction: column;
+  }
+
+  .timeline-card {
+    padding: 24px 18px;
+  }
+
+  .coursework-grid {
+    grid-template-columns: 1fr;
+  }
+}
