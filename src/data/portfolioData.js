@@ -14,7 +14,7 @@ export const portfolioData = {
     statusBadge: "Available for Internships & Projects",
     bio: "I am a Computer Science Engineering student passionate about Artificial Intelligence, Machine Learning, software development, and building practical projects.",
     location: "India",
-    email: "amanpreet.singh@example.com", // Replace with your real email
+    email: "aman22singh06@gmail..com", // Replace with your real email
     github: "https://github.com/#github-link", // Replace with your GitHub URL
     linkedin: "https://linkedin.com/in/#linkedin-link", // Replace with your LinkedIn URL
     resumeUrl: "https://drive.google.com/file/d/1OcwCUmhrgerWoRjTATK42q47oOyTG26X/view?usp=sharing/resume.pdf", // Place your resume.pdf into the public/ folder or paste a Google Drive link
@@ -30,7 +30,7 @@ export const portfolioData = {
     highlights: [
       {
         title: "Current Focus",
-        value: "AI & ML + Full Stack",
+        value: "AI & ML",
         iconName: "Brain"
       },
       {
