@@ -7,7 +7,9 @@ import {
   Sparkles, 
   Terminal,
   Code2,
-  Cpu
+  Cpu,
+  FileText,
+  Download
 } from 'lucide-react';
 import { GithubIcon, LinkedinIcon, MailIcon } from './SocialIcons';
 import '../styles/Hero.css';
@@ -62,6 +64,20 @@ const Hero = () => {
               <FolderGit2 size={18} />
               <span>View My Projects</span>
               <ArrowRight size={16} className="btn-arrow" />
+            </a>
+
+            {/* Download / View Resume Button */}
+            <a
+              href={personal.resumeUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              download="Amanpreet_Singh_Resume.pdf"
+              className="btn btn-resume"
+              title="Download or View Resume / CV"
+            >
+              <FileText size={18} />
+              <span>Download CV</span>
+              <Download size={15} className="resume-download-icon" />
             </a>
 
             <a

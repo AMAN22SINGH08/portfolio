@@ -287,7 +287,8 @@
     display: none;
   }
 
-  .nav-cta-btn {
+  .nav-cta-btn,
+  .nav-resume-btn {
     display: none;
   }
 

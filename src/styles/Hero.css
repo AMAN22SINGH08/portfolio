@@ -104,6 +104,29 @@
   transform: translateX(4px);
 }
 
+.btn-resume {
+  background: rgba(6, 182, 212, 0.12);
+  color: var(--accent-cyan);
+  border: 1px solid rgba(6, 182, 212, 0.35);
+  box-shadow: 0 4px 14px rgba(6, 182, 212, 0.15);
+}
+
+.btn-resume:hover {
+  background: rgba(6, 182, 212, 0.22);
+  border-color: var(--accent-cyan);
+  color: #ffffff;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(6, 182, 212, 0.35);
+}
+
+.resume-download-icon {
+  transition: transform var(--transition-fast);
+}
+
+.btn-resume:hover .resume-download-icon {
+  transform: translateY(2px);
+}
+
 /* Social Icons */
 .hero-socials {
   display: flex;

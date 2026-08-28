@@ -17,7 +17,7 @@ export const portfolioData = {
     email: "amanpreet.singh@example.com", // Replace with your real email
     github: "https://github.com/#github-link", // Replace with your GitHub URL
     linkedin: "https://linkedin.com/in/#linkedin-link", // Replace with your LinkedIn URL
-    resumeUrl: "#resume-link", // Replace with link to your PDF resume (Google Drive, etc.)
+    resumeUrl: "/resume.pdf", // Place your resume.pdf into the public/ folder or paste a Google Drive link
   },
 
   // About Me Section

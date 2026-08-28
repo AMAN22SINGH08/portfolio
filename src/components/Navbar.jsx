@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { portfolioData } from '../data/portfolioData';
-import { Menu, X, Sun, Moon, Sparkles, Terminal } from 'lucide-react';
+import { Menu, X, Sun, Moon, Sparkles, Terminal, FileText, Download } from 'lucide-react';
 import '../styles/Navbar.css';
 
 const Navbar = ({ theme, toggleTheme }) => {
@@ -97,7 +97,7 @@ const Navbar = ({ theme, toggleTheme }) => {
           </ul>
         </nav>
 
-        {/* Right Actions: Theme Toggle & Contact Quick Button */}
+        {/* Right Actions: Theme Toggle, Resume Download, and Connect Button */}
         <div className="navbar-actions">
           <button
             onClick={toggleTheme}
@@ -107,6 +107,19 @@ const Navbar = ({ theme, toggleTheme }) => {
           >
             {theme === 'dark' ? <Sun size={19} /> : <Moon size={19} />}
           </button>
+
+          {/* Download / View Resume Button */}
+          <a
+            href={personal.resumeUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            download="Amanpreet_Singh_Resume.pdf"
+            className="btn btn-secondary btn-sm nav-resume-btn"
+            title="Download or View Resume / CV"
+          >
+            <FileText size={14} />
+            <span>Resume</span>
+          </a>
 
           <a
             href="#contact"
@@ -167,6 +180,19 @@ const Navbar = ({ theme, toggleTheme }) => {
           </ul>
 
           <div className="mobile-drawer-footer">
+            <a
+              href={personal.resumeUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              download="Amanpreet_Singh_Resume.pdf"
+              className="btn btn-secondary btn-block"
+              style={{ marginBottom: '12px' }}
+            >
+              <FileText size={16} />
+              <span>Download Resume (CV)</span>
+              <Download size={14} style={{ marginLeft: 'auto' }} />
+            </a>
+
             <a
               href="#contact"
               className="btn btn-primary btn-block"

@@ -6,9 +6,11 @@ import {
   GraduationCap, 
   Briefcase, 
   Code2, 
-  CheckCircle2,
-  Sparkles,
-  ArrowUpRight
+  CheckCircle2, 
+  Sparkles, 
+  ArrowUpRight,
+  FileText,
+  Download
 } from 'lucide-react';
 import '../styles/About.css';
 
@@ -75,14 +77,27 @@ const About = () => {
               </div>
             </div>
 
-            {/* Quick Resume Link & Contact Link */}
+            {/* Quick Resume Link & Action CTAs */}
             <div className="about-cta-row">
+              <a
+                href={personal.resumeUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                download="Amanpreet_Singh_Resume.pdf"
+                className="btn btn-primary btn-sm"
+                title="Download or View Resume / CV"
+              >
+                <Download size={14} />
+                <span>Download Resume</span>
+              </a>
+
               <a href="#projects" className="btn btn-secondary btn-sm">
                 <span>Explore Projects</span>
                 <ArrowUpRight size={14} />
               </a>
-              <a href="#contact" className="btn btn-primary btn-sm">
-                <span>Let's Discuss Internships</span>
+
+              <a href="#contact" className="btn btn-secondary btn-sm">
+                <span>Contact Me</span>
               </a>
             </div>
           </div>

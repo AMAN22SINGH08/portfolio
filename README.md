@@ -97,7 +97,11 @@ This generates a production-ready, minified build in the `dist/` directory.
 
 You do not need to hunt through multiple JSX files to update your details! Simply open **`src/data/portfolioData.js`** and edit:
 
-1. **Personal Information & Links**:
+1. **Resume / CV (Two Easy Options)**:
+   - **Option A (Direct File)**: Copy your resume PDF into the `public/` folder and name it `resume.pdf` (replacing the placeholder `public/resume.pdf`). It will automatically download/open when visitors click the **Download CV** button!
+   - **Option B (Cloud Link)**: Open `src/data/portfolioData.js` and set `resumeUrl` to your Google Drive, Dropbox, or OneDrive shareable link.
+
+2. **Personal Information & Links**:
    ```javascript
    personal: {
      name: "Amanpreet Singh",
@@ -105,7 +109,7 @@ You do not need to hunt through multiple JSX files to update your details! Simpl
      email: "your.real.email@example.com",
      github: "https://github.com/your-username",
      linkedin: "https://linkedin.com/in/your-profile",
-     resumeUrl: "https://drive.google.com/.../your-resume.pdf",
+     resumeUrl: "/resume.pdf", // or your Google Drive link
    }
    ```
 
