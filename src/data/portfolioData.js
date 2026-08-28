@@ -117,8 +117,8 @@ export const portfolioData = {
       featured: true,
       description: "An AI-based application that analyzes a resume and provides feedback on skills, keywords, structure, and areas for improvement.",
       technologies: ["Python", "AI/ML", "NLP", "React"],
-      githubUrl: "#github-link",
-      demoUrl: "#demo-link",
+      githubUrl: "https://github.com/AMAN22SINGH08/AI-resume-Analyzer#github-link",
+      demoUrl: "https://ai-resume-analyzer-blush-ten.vercel.app/#demo-link",
       highlights: [
         "Parses candidate resumes to extract key skill matrices and education history",
         "Uses Natural Language Processing to score keyword relevance against job descriptions",
@@ -132,8 +132,8 @@ export const portfolioData = {
       featured: true,
       description: "A full-stack real-time communication application designed for messaging and collaboration.",
       technologies: ["MongoDB", "Express.js", "React.js", "Node.js"],
-      githubUrl: "#github-link",
-      demoUrl: "#demo-link",
+      githubUrl: "https://github.com/AMAN22SINGH08/Realtime-chat#github-link",
+      demoUrl: "https://realtime-chat-two-gamma.vercel.app/#demo-link",
       highlights: [
         "Instant bidirectional messaging with WebSocket communication",
         "User authentication, room-based discussions, and message history persistence",
@@ -147,7 +147,7 @@ export const portfolioData = {
     {
       degree: "Bachelor of Technology (B.Tech)",
       field: "Computer Science Engineering",
-      status: "Currently in 2nd Year (2024 – 2028)",
+      status: "Currently in 2nd Year (2025 – 2029)",
       institution: "Engineering College / University",
       specialization: "Artificial Intelligence & Machine Learning",
       description: "Building strong foundational knowledge across computing theory, algorithmic problem solving, software engineering, and artificial intelligence.",
